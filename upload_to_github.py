@@ -56,7 +56,7 @@ def main():
         run(f"git remote set-url origin {REPO_URL}")
 
     # Step 6: Push
-    run("git push -u origin main")
+    run("git push -u origin main --force")
 
     print("===================================")
     print("✅ SUCCESS: Code uploaded to GitHub")
