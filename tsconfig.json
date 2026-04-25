@@ -1,18 +1,11 @@
+cat <<'EOF' > tsconfig.json
 {
   "compilerOptions": {
-    "target": "ES2022",
+    "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "bundler",
     "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "noUncheckedIndexedAccess": true,
-    "outDir": "./dist",
-    "rootDir": "./"
-  },
-  "include": ["src/**/*", "scripts/**/*"],
-  "exclude": ["node_modules", "dist"]
+    "types": ["node"]
+  }
 }
+EOF
